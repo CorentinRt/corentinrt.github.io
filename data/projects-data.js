@@ -292,6 +292,146 @@ const projects = [
         //#endregion
     },
 
+{
+        //#region Lucent
+
+        id: "lucent",
+        title: "Lucent",
+        image: "images/Projects/Lucent/T_Couverture_Lucent.png",
+        date: "June, 2026",
+        details: "Group 16 | 3 months | Unreal Engine | C++ | Blueprint | FPS",
+        feature: "Lead Programmer - Gameplay - Gamefeel - Tools",
+        categories: ["main", "home"],
+
+        logo: "images/Projects/Lucent/T_Logo_Lucent.png",
+
+        description: [
+            "Lucent is a dark shooter, where you evolve in a megastructure while dragging the coffin link to you and killing enemies to light up your path with their blood.",
+
+            "This project is an FPS made during my fourth year of game programming studies at IIM.",
+
+            "It's the result of three months' work by a team of sixteen people :",
+
+            "- 3 game programmers",
+
+            "- 6 game artists",
+
+            "- 5 game designers",
+
+            "- 1 producer",
+
+            "- 1 sound designer"
+        ],
+
+        itch: "https://logre.itch.io/lucent",
+        
+        contribution: [
+            "For this project, I took on the role of lead gameplay programmer. I was therefore responsible for organising the programming team’s tasks, as well as contributing to the development of gameplay mechanics and tools for the game designers.",
+
+            "So, we decided to focus on a short but high-quality immersive experience.",
+
+            "As a result, I worked on the following game mechanics, some tools and numerous game feel elements, whilst planning the programming tasks."
+        ],
+
+        gameplayVideos: [
+            {
+                type: "youtube",
+                url: "https://www.youtube.com/embed/V-8tFRjq7pI",
+                ratio: "16 / 9"
+            }
+        ],
+
+        features: [
+            //#region Features Lucent
+            {
+                /* 1 */
+                title: "Player's Movements & State Machine",
+
+                description: [
+                    "Since we divided the player’s tasks between two programmers, and in order to facilitate future work and collaboration, I took charge of implementing the player’s state machine.",
+                
+                    "This enabled us to separate the (numerous) different states of the player, and therefore quickly present a prototype to the game designers.",
+
+                    "I then took charge of the player’s movement and the various constraints associated with the coffin, ensuring that all the necessary data for tweaking was made available."
+                ],
+
+                media: "images/Projects/Lucent/Gifs/GifsOpti/PlayerMovements_Lucent-min.gif"
+            },
+
+            {
+                /* 2 */
+                title: "Coffin",
+
+                description: [
+                    "My biggest challenge on this project was implementing the coffin’s behaviour.",
+
+                    "I took over this task from scratch from a programmer who was struggling to bring the game designers’ vision to life.",
+
+                    "As the coffin needed to simulate certain physics behaviours whilst also being an integral part of the character’s movement gameplay, it was important to me that the gameplay drives the physics, rather than the physics drives the gameplay.",
+
+                    "So, I did not select the solution of using Unreal Engine’s pre-built physics system (which would have taken too long to limit for all the special cases).",
+
+                    "Instead, I rebuilt everything from scratch by hand, from the coffin’s movements to its behaviour when it collides with an object.",
+
+                    "As I couldn’t handle all of the extreme cases in some levels, rebuilding everything from scratch allowed me to provide the level designers with tools to constrain movement along a spline, attach it to a ledge, ..."
+                ],
+
+                media: "images/Projects/Lucent/Gifs/GifsOpti/Coffin_Lucent-min.gif"
+            },
+
+            {
+                /* 3 */
+                title: "Tools : Command Actions",
+
+                description: [
+                        "As we’re working on a linear game, we needed to find a simple and easily integrable way to allow the game designer to trigger specific events WHEN and WHERE they wish.",
+
+                        "So I took the opportunity to develop an Unreal Engine version of one of my favourite design patterns : Command Actions.",
+
+                        "It’s a design pattern I’d already used repeatedly in several of my previous Unity projects (see SongVoid).",
+
+                        "Here, the core of the design pattern is written in C++, but each specific Command Action is implemented and compatible with Blueprints, allowing game designers quick and easy control over what happens.",
+
+                        "This has enabled level designers to place boxes throughout the level, triggering Command Actions without needing a full-time programmer for each specific game sequence."
+                    ],
+
+                media: "images/Projects/Lucent/Gifs/GifsOpti/CommandActions_Lucent-min.gif"
+            },
+
+            {
+                /* 4 */
+                title: "Level Streaming",
+
+                description: [
+                    "Right from the start, it was clear to us that, given the planned size of our levels, we would need to use Unreal Engine’s Level Streaming to avoid unnecessary FPS drops throughout the game.",
+
+                    "This was the first project in which I’d used it, and I was able to learn how it worked and discover some of its limitations, particularly regarding some issues it caused with our navmeshes.",
+
+                    "However, suspecting that this system might impact the project, I decided to integrate it very early on in production, which allowed us to avoid any last-minute surprises."
+                ],
+
+                media: "images/Projects/Lucent/Gifs/GifsOpti/LevelStreaming_Lucent-min.gif"
+            },
+
+            {
+                /* 5 */
+                title: "UI : Menus & Effects",
+
+                description: [
+                    "I worked on the game’s various menus (main menu, pause menu, etc.), as well as ensuring controller compatibility for certain interactions (which aren’t supported by default in the engine).",
+
+                    "I also created numerous on-screen UI effects, such as input tutorials that appear until the corresponding input is pressed (triggered by Command Actions), and quick text effects allowing Game Designers to incorporate lore into the levels (these also work with Command Actions)."
+                ],
+
+                media: "images/Projects/Lucent/Gifs/GifsOpti/UIEffects_Lucent-min.gif"
+            }
+
+            //#endregion
+        ]
+
+        //#endregion
+    },
+
     {
         //#region Out Of ContROLL
 
