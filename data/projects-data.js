@@ -445,7 +445,7 @@ const projects = [
         details: "Group 11 | 3 months | Unreal Engine | C++ | Blueprint | Couch Game",
         feature: "Gameplay - Gamefeel - Juiciness - Game Loop",
         categories: ["main", "home"],
-        background: "images/Projects/OutOfContROLL/T_Couverture_OutOfContROLL.png",
+        background: "images/Projects/OutOfContROLL/T_Background_OutOfContROLL.png",
 
         logo: "images/Projects/OutOfContROLL/T_Logo_Out_of_Controll.png",
 
