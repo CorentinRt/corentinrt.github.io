@@ -304,7 +304,7 @@ const projects = [
         details: "Group 16 | 3 months | Unreal Engine | C++ | Blueprint | FPS",
         feature: "Lead Programmer - Gameplay - Gamefeel - Tools",
         categories: ["main", "home"],
-        background: "images/Projects/Lucent/T_Couverture_Lucent.png",
+        background: "images/Projects/Lucent/T_Background_Lucent.png",
 
         logo: "images/Projects/Lucent/T_Logo_Lucent.png",
 
