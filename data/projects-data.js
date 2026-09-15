@@ -11,6 +11,8 @@ const projects = [
         details: "Solo Project | 3 months | Unity 6 | Strategy & Skirmish",
         feature: "All Gameplay mechanics - Gamefeel - Tools - Tech Art",
         categories: ["main", "home"],
+        background: "images/Projects/SongVoid/T_Couverture_SongVoid.png",
+
 
         /*---- Project Page */
 
@@ -292,7 +294,7 @@ const projects = [
         //#endregion
     },
 
-{
+    {
         //#region Lucent
 
         id: "lucent",
@@ -302,6 +304,7 @@ const projects = [
         details: "Group 16 | 3 months | Unreal Engine | C++ | Blueprint | FPS",
         feature: "Lead Programmer - Gameplay - Gamefeel - Tools",
         categories: ["main", "home"],
+        background: "images/Projects/Lucent/T_Couverture_Lucent.png",
 
         logo: "images/Projects/Lucent/T_Logo_Lucent.png",
 
@@ -442,6 +445,7 @@ const projects = [
         details: "Group 11 | 3 months | Unreal Engine | C++ | Blueprint | Couch Game",
         feature: "Gameplay - Gamefeel - Juiciness - Game Loop",
         categories: ["main", "home"],
+        background: "images/Projects/OutOfContROLL/T_Couverture_OutOfContROLL.png",
 
         logo: "images/Projects/OutOfContROLL/T_Logo_Out_of_Controll.png",
 
@@ -661,6 +665,7 @@ const projects = [
         details: "Group 8 | 1 month | Unreal Engine | Blueprint | FPS",
         feature: "Gameplay - Gamefeel - Juiciness - AI",
         categories: ["main", "home"],
+        background: "images/Projects/LibertyExpress/T_Couverture_LibertyExpress.png",
 
         logo: "images/Projects/LibertyExpress/T_Logo_Liberty_Express.png",
 
@@ -840,6 +845,7 @@ const projects = [
         details: "Group 2 | 4 months | Unity | Mobile | Clicker",
         feature: "Gameplay - Gamefeel - Juiciness - UI",
         categories: ["main", "home"],
+        background: "images/Projects/WanderingTraveller/T_Couverture_WanderingTraveller.jpg",
 
         logo: "images/Projects/WanderingTraveller/T_Logo_Wandering_Traveller.jpg",
 
@@ -977,6 +983,7 @@ const projects = [
         details: "Group 9 | 1 month | Unity | C# | Narrative Game",
         feature: "Lead programmer - Tool - Gameplay - Gamefeel - Juiciness - Game Loop",
         categories: ["main", "home"],
+        background: "images/Projects/MoonshineMurder/T_Couverture_MoonshineMurder.png",
 
         logo: "images/Projects/MoonshineMurder/T_Logo_MoonshineMurder.png",
 
@@ -1144,6 +1151,7 @@ const projects = [
         details: "Group 11 | 1 month | Unity | Point and Click",
         feature: "Gameplay - Juiciness",
         categories: ["main"],
+        background: "images/Projects/B4ItEnds/T_Couverture_B4ItEnds.png",
 
         logo: "images/Projects/B4ItEnds/T_Logo_B4ItEnds.png",
 
@@ -1215,6 +1223,7 @@ const projects = [
         details: "Group 8 | 1 month | Unity | Mobile | Puzzle Game",
         feature: "Gameplay - Gamefeel - Google Play",
         categories: ["main", "home"],
+        background: "images/Projects/GloomiesEnigma/T_Couverture_GloomiesEnigma.png",
 
         logo: "images/Projects/GloomiesEnigma/T_Logo_GloomiesEnigma.png",
 
@@ -1322,6 +1331,7 @@ const projects = [
         details: "Group 5 | 1 week | Unity | Brick-Breaker",
         feature: "Gameplay - Gamefeel - Juiciness",
         categories: ["main", "home"],
+        background: "images/Projects/SweetOnPeg/T_Couverture_SweetOnPeg.png",
 
         logo: "images/Projects/SweetOnPeg/T_Couverture_SweetOnPeg.png",
 
@@ -1411,6 +1421,7 @@ const projects = [
         details: "Solo Project | 6 months | Unity | Platformer",
         feature: "Gameplay - Gamefeel - Juiciness - UI",
         categories: ["main"],
+        background: "images/Projects/Prologue/T_Couverture_Prologue.jpg",
 
         logo: "images/Projects/Prologue/T_Couverture_Prologue.jpg",
 
@@ -1542,6 +1553,7 @@ const projects = [
         details: "Group 8 |  4 days | Unity | Chase",
         feature: "Lead programmer - Gameplay - Gamefeel - Juiciness",
         categories: ["side", "jams"],
+        background: "images/Projects/PlieDAvance/T_Couverture_PlieDAvance.png",
 
         logo: "images/Projects/PlieDAvance/T_Logo_PlieDAvance.png",
 
@@ -1660,6 +1672,7 @@ const projects = [
         details: "Group 3 |  3 weeks | SFML | C++",
         feature: "Physics - Collision - Gameplay - Juiciness",
         categories: ["side"],
+        background: "images/Projects/Bond/T_Couverture_Bond.jpg",
 
         logo: "images/Projects/Bond/T_Couverture_Bond.jpg",
 
@@ -1769,6 +1782,7 @@ const projects = [
         details: "Solo |  1 month | Modding",
         feature: "Gameplay",
         categories: ["side"],
+        background: "images/Projects/Modding/T_Couverture_Modding.png",
 
         logo: "images/Projects/Modding/T_Logo_Modding.png",
 
@@ -1838,6 +1852,7 @@ const projects = [
         details: "Solo |  1 month | Unity | Prototypes",
         feature: "Gameplay - Gamefeel",
         categories: ["side"],
+        background: "images/Projects/Progtober/T_Couverture_Progtober.png",
 
         logo: "images/Projects/Progtober/T_Logo_Progtober.jpg",
 
@@ -1977,6 +1992,7 @@ const projects = [
         details: "Group 3 |  2 days | Jam | Unity | Puzzle Game",
         feature: "Gameplay - Gamefeel",
         categories: ["side", "jams"],
+        background: "images/Projects/TinyMysteries/T_Couverture_TinyMysteries.png",
 
         logo: "images/Projects/TinyMysteries/T_Couverture_TinyMysteries.png",
 
@@ -2047,6 +2063,7 @@ const projects = [
         details: "Group 9 |  4 days | Jam | Unity",
         feature: "Gameplay - Camera",
         categories: ["side", "jams"],
+        background: "images/Projects/DartNDustry/T_Couverture_DartNDustry.png",
 
         logo: "images/Projects/DartNDustry/T_Couverture_DartNDustry.png",
 

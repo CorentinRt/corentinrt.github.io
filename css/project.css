@@ -1,42 +1,197 @@
-/* ========================================
+/*
+========================================
 PROJECT PAGE
-======================================== */
+========================================
+*/
 
 #project-page {
     background: #091125;
     color: #f5f5f5;
-
     padding-top: 100px;
-
     min-height: 100vh;
 }
 
 
-/* ========================================
+/*
+========================================
 PROJECT HEADER
-======================================== */
+========================================
+*/
 
 .project-header {
-    min-height: 45vh;
+    position: relative;
+    width: 100%;
 
-    padding: 8rem 5vw 4rem;
+    padding: 7rem 5vw 6rem;
 
     display: flex;
-    flex-direction: column;
-
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background: transparent;
+
+    /*
+    IMPORTANT :
+    Le background est coupé aux limites
+    exactes du header.
+
+    Il ne pourra donc JAMAIS passer
+    au-dessus de la vidéo.
+    */
+
+    overflow: hidden;
+
+    isolation: isolate;
+}
+
+
+/*
+========================================
+PROJECT HEADER BACKGROUND
+========================================
+*/
+
+.project-header-bg {
+    position: absolute;
+
+    /*
+    On remonte légèrement l'image
+    derrière le haut du header.
+    */
+
+    top: -100px;
+
+    /*
+    FULL WIDTH DE L'ÉCRAN
+    */
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 100vw;
+
+    /*
+    Le background fait exactement la hauteur
+    du header + les 100px remontés en haut.
+
+    Il sera donc coupé proprement par
+    overflow: hidden du header.
+    */
+
+    height: calc(100% + 100px);
+
+    background-size: cover;
+
+    background-position: center top;
+
+    background-repeat: no-repeat;
+
+    z-index: 0;
+
+    pointer-events: none;
+
+
+    /*
+    ====================================
+    FADE DU BACKGROUND
+    ====================================
+
+    Le fade se fait à l'intérieur
+    du header uniquement.
+    */
+
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+
+        /*
+        Image totalement visible
+        */
+
+        #000 0%,
+        #000 50%,
+
+        /*
+        Début progressif du fade
+        */
+
+        rgba(0, 0, 0, 0.90) 60%,
+        rgba(0, 0, 0, 0.65) 70%,
+        rgba(0, 0, 0, 0.35) 82%,
+
+        /*
+        Image complètement transparente
+        AVANT la fin du header
+        */
+
+        transparent 100%
+    );
+
+    mask-image: linear-gradient(
+        to bottom,
+
+        #000 0%,
+        #000 50%,
+
+        rgba(0, 0, 0, 0.90) 60%,
+        rgba(0, 0, 0, 0.65) 70%,
+        rgba(0, 0, 0, 0.35) 82%,
+
+        transparent 100%
+    );
+}
+
+
+/*
+========================================
+HEADER CONTENT
+========================================
+*/
+
+.project-header-overlay {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    max-width: 1200px;
 
     text-align: center;
 }
 
+
+/*
+========================================
+PROJECT TITLE
+========================================
+*/
+
 .project-header h1 {
-    margin: 0;
+    margin: 0 0 1rem;
 
     font-size: 5rem;
+
     font-weight: 600;
 
     color: #f5f5f5;
+}
+
+
+/*
+========================================
+PROJECT DETAILS
+========================================
+*/
+
+.project-header .project-details {
+    margin: 0.4rem 0;
+
+    font-size: 1.2rem;
+
+    color: #d5d9e2;
 }
 
 .project-details {
@@ -48,9 +203,11 @@ PROJECT HEADER
 }
 
 
-/* ========================================
+/*
+========================================
 GAMEPLAY VIDEOS
-======================================== */
+========================================
+*/
 
 .project-videos {
     width: min(1400px, 90%);
@@ -67,9 +224,11 @@ GAMEPLAY VIDEOS
 }
 
 
-/* ========================================
+/*
+========================================
 VIDEO / IFRAME
-======================================== */
+========================================
+*/
 
 .project-videos video,
 .project-videos iframe {
@@ -85,9 +244,11 @@ VIDEO / IFRAME
 }
 
 
-/* ========================================
+/*
+========================================
 ONE VIDEO
-======================================== */
+========================================
+*/
 
 .project-videos video:only-child,
 .project-videos iframe:only-child {
@@ -95,9 +256,11 @@ ONE VIDEO
 }
 
 
-/* ========================================
+/*
+========================================
 LOCAL VIDEO
-======================================== */
+========================================
+*/
 
 .project-videos video {
     height: auto;
@@ -106,9 +269,11 @@ LOCAL VIDEO
 }
 
 
-/* ========================================
+/*
+========================================
 YOUTUBE - LANDSCAPE
-======================================== */
+========================================
+*/
 
 .project-videos iframe.video-landscape {
     aspect-ratio: 16 / 9;
@@ -116,16 +281,19 @@ YOUTUBE - LANDSCAPE
     height: auto;
 }
 
-/* ========================================
+
+/*
+========================================
 VIDEO - PORTRAIT
-======================================== */
+========================================
+*/
 
 .project-videos video.video-portrait,
 .project-videos iframe.video-portrait {
-
     aspect-ratio: 9 / 16;
 
     width: min(281px, 100%);
+
     height: 500px;
 
     max-height: 70vh;
@@ -134,16 +302,18 @@ VIDEO - PORTRAIT
 }
 
 
-/* ========================================
+/*
+========================================
 VIDEO - SQUARE
-======================================== */
+========================================
+*/
 
 .project-videos video.video-square,
 .project-videos iframe.video-square {
-
     aspect-ratio: 1 / 1;
 
     width: min(500px, 100%);
+
     height: auto;
 
     max-height: 70vh;
@@ -152,23 +322,27 @@ VIDEO - SQUARE
 }
 
 
-/* ========================================
+/*
+========================================
 VIDEO - LANDSCAPE
-======================================== */
+========================================
+*/
 
 .project-videos video.video-landscape,
 .project-videos iframe.video-landscape {
-
     width: 100%;
+
     aspect-ratio: 16 / 9;
 
     height: auto;
 }
 
 
-/* ========================================
-MOBILE
-======================================== */
+/*
+========================================
+MOBILE VIDEOS
+========================================
+*/
 
 @media (max-width: 900px) {
 
@@ -178,11 +352,13 @@ MOBILE
 
     .project-videos iframe.video-portrait {
         width: min(225px, 70%);
+
         height: 400px;
     }
 
     .project-videos iframe.video-square {
         width: min(400px, 80%);
+
         height: auto;
     }
 }
@@ -192,7 +368,9 @@ MOBILE
 
     .project-videos {
         width: 92%;
+
         grid-template-columns: 1fr;
+
         gap: 1.5rem;
     }
 
@@ -203,19 +381,23 @@ MOBILE
 
     .project-videos iframe.video-portrait {
         width: min(200px, 65%);
+
         height: 355px;
     }
 
     .project-videos iframe.video-square {
         width: min(350px, 85%);
+
         height: auto;
     }
 }
 
 
-/* ========================================
+/*
+========================================
 PROJECT DESCRIPTION
-======================================== */
+========================================
+*/
 
 .project-description {
     width: min(1200px, 85%);
@@ -236,14 +418,17 @@ PROJECT DESCRIPTION
 }
 
 
-/* ========================================
+/*
+========================================
 PROJECT LOGO
-======================================== */
+========================================
+*/
 
 .project-logo {
     display: flex;
 
     justify-content: center;
+
     align-items: center;
 }
 
@@ -258,9 +443,11 @@ PROJECT LOGO
 }
 
 
-/* ========================================
+/*
+========================================
 PROJECT DESCRIPTION TEXT
-======================================== */
+========================================
+*/
 
 .project-description-text {
     font-size: 1.15rem;
@@ -279,9 +466,11 @@ PROJECT DESCRIPTION TEXT
 }
 
 
-/* ========================================
+/*
+========================================
 ITCH BUTTON
-======================================== */
+========================================
+*/
 
 .project-link {
     min-height: 0;
@@ -293,6 +482,7 @@ ITCH BUTTON
     display: flex;
 
     justify-content: center;
+
     align-items: center;
 
     margin: 5rem auto;
@@ -302,6 +492,7 @@ ITCH BUTTON
     display: inline-flex;
 
     align-items: center;
+
     justify-content: center;
 
     padding: 1rem 2.6rem;
@@ -339,9 +530,11 @@ ITCH BUTTON
 }
 
 
-/* ========================================
+/*
+========================================
 CONTRIBUTION
-======================================== */
+========================================
+*/
 
 .project-contribution {
     width: min(900px, 85%);
@@ -378,9 +571,11 @@ CONTRIBUTION
 }
 
 
-/* ========================================
+/*
+========================================
 FEATURES
-======================================== */
+========================================
+*/
 
 .project-features {
     width: min(1400px, 90%);
@@ -399,9 +594,11 @@ FEATURES
 }
 
 
-/* ========================================
+/*
+========================================
 FEATURE
-======================================== */
+========================================
+*/
 
 .project-feature {
     display: grid;
@@ -416,9 +613,11 @@ FEATURE
 }
 
 
-/* ========================================
+/*
+========================================
 FEATURE MEDIA
-======================================== */
+========================================
+*/
 
 .feature-media {
     width: 100%;
@@ -434,6 +633,7 @@ FEATURE MEDIA
 
 .feature-media img {
     width: 100%;
+
     height: 100%;
 
     object-fit: contain;
@@ -442,9 +642,11 @@ FEATURE MEDIA
 }
 
 
-/* ========================================
+/*
+========================================
 FEATURE TEXT
-======================================== */
+========================================
+*/
 
 .feature-content {
     padding: 2rem;
@@ -475,9 +677,11 @@ FEATURE TEXT
 }
 
 
-/* ========================================
+/*
+========================================
 REVERSE FEATURE
-======================================== */
+========================================
+*/
 
 .project-feature.feature-reverse .feature-media {
     order: 2;
@@ -488,9 +692,11 @@ REVERSE FEATURE
 }
 
 
-/* ========================================
+/*
+========================================
 PROJECT NOT FOUND
-======================================== */
+========================================
+*/
 
 .project-not-found {
     min-height: 80vh;
@@ -500,6 +706,7 @@ PROJECT NOT FOUND
     flex-direction: column;
 
     align-items: center;
+
     justify-content: center;
 
     text-align: center;
@@ -530,16 +737,37 @@ PROJECT NOT FOUND
 }
 
 
-/* ========================================
+/*
+========================================
 TABLET
-======================================== */
+========================================
+*/
 
 @media (max-width: 900px) {
 
-    .project-header h1 {
-        font-size: 4rem;
+    .project-header {
+        padding: 6rem 5vw 5rem;
     }
 
+    .project-header-bg {
+        top: -100px;
+
+        height: calc(100% + 100px);
+
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        width: 100vw;
+    }
+
+    .project-header h1 {
+        font-size: 3.2rem;
+    }
+
+    .project-header .project-details {
+        font-size: 1.05rem;
+    }
 
     .project-description {
         grid-template-columns: 1fr;
@@ -549,18 +777,15 @@ TABLET
         text-align: center;
     }
 
-
     .project-logo img {
         max-width: 300px;
     }
-
 
     .project-feature {
         grid-template-columns: 1fr;
 
         gap: 2rem;
     }
-
 
     .project-feature.feature-reverse .feature-media {
         order: 1;
@@ -570,38 +795,51 @@ TABLET
         order: 2;
     }
 
-
     .feature-content {
         padding: 0 1rem;
 
         text-align: center;
     }
-
 }
 
 
-/* ========================================
+/*
+========================================
 MOBILE
-======================================== */
+========================================
+*/
 
 @media (max-width: 600px) {
+
+    .project-header {
+        padding: 5rem 6vw 4rem;
+    }
+
+    .project-header-bg {
+        top: -80px;
+
+        height: calc(100% + 80px);
+
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        width: 100vw;
+
+        background-position: center top;
+    }
+
+    .project-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .project-header .project-details {
+        font-size: 0.9rem;
+    }
 
     #project-page {
         padding-top: 80px;
     }
-
-
-    .project-header {
-        min-height: 35vh;
-
-        padding: 5rem 1.5rem 3rem;
-    }
-
-
-    .project-header h1 {
-        font-size: 3rem;
-    }
-
 
     .project-details {
         font-size: 1rem;
@@ -609,23 +847,19 @@ MOBILE
         line-height: 1.6;
     }
 
-
     .project-description {
         width: 90%;
 
         margin-top: 6rem;
     }
 
-
     .project-description-text {
         font-size: 1rem;
     }
 
-
     .project-link {
         margin: 4rem auto;
     }
-
 
     .itch-button {
         padding: 0.55rem 1.5rem;
@@ -633,23 +867,19 @@ MOBILE
         font-size: 0.95rem;
     }
 
-
     .project-contribution {
         width: 90%;
 
         margin-bottom: 7rem;
     }
 
-
     .project-contribution h2 {
         font-size: 1.8rem;
     }
 
-
     .project-contribution p {
         font-size: 1rem;
     }
-
 
     .project-features {
         width: 92%;
@@ -659,14 +889,11 @@ MOBILE
         padding-bottom: 6rem;
     }
 
-
     .feature-content h2 {
         font-size: 2rem;
     }
 
-
     .feature-content p {
         font-size: 1rem;
     }
-
 }

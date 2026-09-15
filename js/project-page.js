@@ -250,6 +250,13 @@ projectPage.innerHTML = `
 
     <section class="project-header">
 
+    <div
+        class="project-header-bg"
+        style="background-image: url('${project.background || project.image}');"
+    ></div>
+
+    <div class="project-header-overlay">
+
         <h1>
             ${project.title}
         </h1>
@@ -262,7 +269,9 @@ projectPage.innerHTML = `
             ${project.feature}
         </p>
 
-    </section>
+    </div>
+
+</section>
 
 
     <!-- =================================
