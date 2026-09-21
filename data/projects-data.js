@@ -2,6 +2,72 @@ const projects = [
 
     /* ---- MAIN ---- */
     {
+        //#region Nautus
+
+        id: "nautus",
+        title: "Nautus",
+        image: "images/Projects/Nautus/T_Couverture_Nautus.png",
+        date: "August, 2025",
+        details: "Internship | Steam | Exploration",
+        feature: "Network Gameplay mechanics - UI - Gamefeel",
+        categories: ["main", "home"],
+        background: "images/Projects/Nautus/T_Background_Nautus.png",
+
+
+        /*---- Project Page */
+
+        logo: "images/Projects/Nautus/T_Logo_MagicDesignStudios_Nautus.jpg",
+
+        description: [
+            "From the indie studio behind Have a Nice Death and Unruly Heroes comes NAUTUS, a quirky underwater adventure where the surface is your cozy sanctuary, but the ocean floor is a whole different beast.",
+
+            "Explore the abyss in your upgradable submarine, face strange creatures, gather resources, and recover mysterious artifacts to uncover what happened to the N.A.U.T.U.S. research team.",
+
+            "Return to the surface to craft, build, and befriend its eccentric inhabitants before diving even deeper—solo or with up to three friends in online co-op."
+        ],
+
+        steam: "https://store.steampowered.com/app/2917940/NAUTUS/",
+
+        itch: "",
+        
+        contribution: [
+            "During my third-year placement at the IIM, I had the chance to join the game studio 'Magic Design Studios' ('Have a Nice Death', 'Unruly Heroes') and contribute, as a Gameplay Programmer, to the production of their upcoming title, 'Nautus'.",
+
+            "During this six-month internship, I was able to gain a lot of experience and develop my skills.",
+
+            "However, the most important part for me was finally being able to get a foot in the door of the industry and work alongside so many highly creative and talented people.",
+
+            "This further confirmed my desire to continue on this path of game development."
+        ],
+
+        gameplayVideos: [
+            {
+                type: "youtube",
+                url: "https://www.youtube.com/embed/7SM-n0EDN6Q",
+                ratio: "16 / 9"
+            }
+        ],
+
+        features: [
+            //#region Features Nautus
+            {
+                /* 1 */
+                title: "Play the game on Steam !",
+
+                description: [
+
+                ],
+
+                media: "images/Projects/Nautus/T_Feature_Demo_Nautus.jpg"
+            }
+
+            //#endregion
+        ]
+
+        //#endregion
+    },
+
+    {
         //#region SongVoid
 
         id: "songvoid",
@@ -27,6 +93,8 @@ const projects = [
         
             "Although I mainly did the programming for this project, I was also able to experiment with many other areas of development."
         ],
+
+        steam: "",
 
         itch: "https://corentinrmt.itch.io/songvoid",
         
@@ -326,6 +394,8 @@ const projects = [
             "- 1 sound designer"
         ],
 
+        steam: "",
+
         itch: "https://logre.itch.io/lucent",
         
         contribution: [
@@ -468,6 +538,8 @@ const projects = [
 
             "- 2 sound designers"
         ],
+
+        steam: "",
 
         itch: "https://tami14994.itch.io/out-of-controll",
         
@@ -685,6 +757,8 @@ const projects = [
             "- 1 producer"
         ],
 
+        steam: "",
+
         itch: "https://garzra41.itch.io/liberty-express",
         
         contribution: [
@@ -857,6 +931,8 @@ const projects = [
             "It's the result of four months' work by a team of only two game programmers, therefore our goal was mainly to challenge our abilities while learning new technical skills."
         ],
 
+        steam: "",
+
         itch: "",
         
         contribution: [
@@ -1002,6 +1078,8 @@ const projects = [
 
             "- 1 producers / game artist"
         ],
+
+        steam: "",
 
         itch: "https://play.google.com/store/apps/details?id=com.LostDesertInteractive.MoonshineMurder&utm_source=emea_Med",
         
@@ -1171,6 +1249,8 @@ const projects = [
             "- 1 tech artist"
         ],
 
+        steam: "",
+
         itch: "https://khiinfox.itch.io/b4-itends",
         
         contribution: [
@@ -1240,6 +1320,8 @@ const projects = [
 
             "- 2 game designers"
         ],
+
+        steam: "",
 
         itch: "https://august-languepin.itch.io/gloomiesenigma",
         
@@ -1349,6 +1431,8 @@ const projects = [
             "- 1 game designers"
         ],
 
+        steam: "",
+
         itch: "https://victinight.itch.io/sweets-on-peg",
         
         contribution: [
@@ -1432,6 +1516,8 @@ const projects = [
 
             "It's the result of six months solo work. It's also my first project using unity and C# language."
         ],
+
+        steam: "",
 
         itch: "",
         
@@ -1573,6 +1659,8 @@ const projects = [
             "- 1 project manager"
         ],
 
+        steam: "",
+
         itch: "https://kyuzya.itch.io/plie-davance",
         
         contribution: [
@@ -1688,6 +1776,8 @@ const projects = [
             "This time, we weren't using any game engine and we only used SFML and C++."
         ],
 
+        steam: "",
+
         itch: "",
         
         contribution: [
@@ -1792,6 +1882,8 @@ const projects = [
             "I decided to mod Hollow Knight to train my skills on a Unity game."
         ],
 
+        steam: "",
+
         itch: "",
         
         contribution: [
@@ -1863,6 +1955,8 @@ const projects = [
 
             "It's the result of a month's solo work. My goal was to explore new game mechanics of all kinds, from car games to fps."
         ],
+
+        steam: "",
 
         itch: "",
         
@@ -2004,6 +2098,8 @@ const projects = [
             "It's the result of two days' work by a team of three game programmers. Our goal was to challenge ourselves by seeing what we could do in a very short time."
         ],
 
+        steam: "",
+
         itch: "https://corentinrmt.itch.io/tiny-mysteries",
         
         contribution: [
@@ -2082,6 +2178,8 @@ const projects = [
 
             "- 1 producer"
         ],
+
+        steam: "",
 
         itch: "https://tom-hook.itch.io/dartyndustry",
         

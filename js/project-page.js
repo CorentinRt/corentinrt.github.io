@@ -320,6 +320,25 @@ projectPage.innerHTML = `
     ================================== -->
 
     ${
+        project.steam
+        ? `
+            <section class="project-link">
+
+                <a
+                    href="${project.steam}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="steam-button"
+                >
+                    Play on Steam !
+                </a>
+
+            </section>
+        `
+        : ""
+    }
+    
+    ${
         project.itch
         ? `
             <section class="project-link">
@@ -330,14 +349,14 @@ projectPage.innerHTML = `
                     rel="noopener noreferrer"
                     class="itch-button"
                 >
-                    Play on itch.io
+                    Play on itch.io !
                 </a>
 
             </section>
         `
         : ""
     }
-
+    
 
     <!-- =================================
          CONTRIBUTION

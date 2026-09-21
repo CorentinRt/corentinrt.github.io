@@ -468,7 +468,7 @@ PROJECT DESCRIPTION TEXT
 
 /*
 ========================================
-ITCH BUTTON
+ITCH & STEAM BUTTON
 ========================================
 */
 
@@ -522,6 +522,47 @@ ITCH BUTTON
 }
 
 .itch-button:hover {
+    background: #f5f5f5;
+
+    color: #060B18;
+
+    transform: translateY(-3px);
+}
+
+.steam-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 1rem 2.6rem;
+
+    min-height: auto;
+
+    border: 1px solid #f5f5f5;
+
+    border-radius: 5px;
+
+    color: #f5f5f5;
+
+    text-decoration: none;
+
+    font-size: 1rem;
+
+    line-height: 1.2;
+
+    white-space: nowrap;
+
+    background-color: #232730;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.steam-button:hover {
     background: #f5f5f5;
 
     color: #060B18;
